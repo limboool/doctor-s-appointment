@@ -1,0 +1,27 @@
+<!-- Главная экран -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Электронная регистратура</title>
+  <script src="eel.js"></script>
+  <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+  <div id="pacient">
+    <input type="text" id="username" placeholder="Ваше имя">
+    <input type="text" id="adress" placeholder="Ваш адресс">
+    <input type="submit" value="Сохранить" onclick="set_pacient()">
+  </div>
+  <h1 id="electron">Электронная регистратура</h1>
+  <div id="visit">
+    <a href="free.html" id="free"><span></span> Бесплатный прием</a>
+    <a href="paid.html" id="paid"><span></span> Платный прием</a>
+  </div>
+  <div id="other">
+    <a href="call.html" id="callhome"><span></span> Вызов врача на дом</a>
+    <a href="timetable.html" id="timetable"><span></span> Расписание врачей</a>
+  </div>
+  <script src="index.js"></script>
+  <script>get_pacient()</script>
+</body>
+</html>

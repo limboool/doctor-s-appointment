@@ -1,0 +1,30 @@
+<!-- Страница вызова врача на дом -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Электронная регистратура</title>
+  <script src="eel.js"></script>
+  <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+  <h1 id="h1">Вызов врача</h1>
+  <p>В случае если Вам стало плохо нажмите кнопку ниже.</p>
+
+  <button id="extra" onclick="help()">Экстренная помощь</button>
+
+  <table width="100%" border="1">
+    <tbody>
+      <tr>
+        <td></td>
+        <td><b>Врач</b></td>
+        <td><b>Прием</b></td>
+        <td><b></b></td>
+      </tr>
+    </tbody>
+    <tbody id="queue"></tbody>
+  </table>
+
+  <script src="index.js"></script>
+  <script>get_call()</script>
+</body>
+</html>
